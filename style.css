@@ -108,7 +108,6 @@ h1, h2, h3, h4, h5, h6, p
     justify-content: space-between;
     align-items: center;
     font-weight: 500;
-    font-size: 2.9rem;
     padding: 15px 25px;
     border-radius: 7px;
 }
@@ -308,7 +307,7 @@ blockquote span
 .sec-one-left div
 {
     color: #fff;
-    background-color: rgba(0, 0, 0, 0.4);
+    /* background-color: rgba(0, 0, 0, 0.4); */
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -318,17 +317,21 @@ blockquote span
 
 .sec-one-left div h3
 {
-    font-size: 48px;
+    font-size: 48px!important;
     opacity: 0.9;
     color: rgb(189, 189, 240);
     font-family: 'Square Peg', cursive;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
 }
 
 .sec-one-left div p
 {
     font-weight: 300;
-    font-size: 1.3rem;
+    font-size: 18px;
     opacity: 0.8;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
 }
 
 .sec-one-right h3
@@ -430,6 +433,32 @@ blockquote span
 }
 /***** end of index.html *****/
 
+/***** gallery.html ******/
+
+/* section three */
+.section-three{
+    margin: 40px 0;
+}
+.single-img{
+    position: relative;
+    margin: 10px;
+    justify-content: space-around;
+}
+.single-img-content{
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: #fff;
+    padding: 5px 30px;
+    background: rgba(0, 0, 0, 0.7);
+}
+.single-img-content h3
+{
+    font-size: 18px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
 
 /**** Footer Styling *******/
 .footer
@@ -511,6 +540,13 @@ blockquote span
     .insta-img{
         grid-template-columns: repeat(4, 1fr);
     }
+
+    /* section three */
+    .gallery
+    {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media screen and (min-width: 992px){
@@ -589,6 +625,12 @@ blockquote span
     width: 60%;
     margin-left: auto;
     margin-right: auto;
+    }
+
+    /* section three */
+    .gallery
+    {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
