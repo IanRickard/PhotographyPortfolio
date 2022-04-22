@@ -1,8 +1,3 @@
-:root
-{
-    --transition: all 0.5s ease;
-}
-
 *
 {
     padding: 0;
@@ -68,7 +63,7 @@ h1, h2, h3, h4, h5, h6, p
     border: 3px solid orange;
     border-radius: 25px;
     margin: 15px 0;
-    transform: var(--transition);
+    transition: 0.5s;
 }
 
 .btn:hover
@@ -94,7 +89,7 @@ h1, h2, h3, h4, h5, h6, p
 .header
 {
     min-height: 100vw;
-    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("WhatsApp Image 2022-04-16 at 10.17.44 PM (1).jpeg") center/cover no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("head.jpg") center/cover no-repeat;
     color: #fff;
 }
 
@@ -143,14 +138,14 @@ h1, h2, h3, h4, h5, h6, p
 {
     background: #fff;
     color: #000;
-    transition: var(--transition);
+    transition: 0.5s;
 }
 
 .top-nav
 {
     background: rgba(0, 0, 0, 0.3);
-    transform: translate(-800px);
-    transition: var(--transition);
+    transform: translate(-1800px);
+    transition: 0.5s;
 }
 
 .showNav
@@ -188,7 +183,7 @@ h1, h2, h3, h4, h5, h6, p
     left: 50%;
     transform: translateX(-50%);
     width: 0;
-    transition: var(--transition);
+    transition: 0.5s;
 }
 
 .top-nav ul a:hover::after
@@ -276,7 +271,7 @@ blockquote span
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: var(--transition);
+    transition: 0.5s;
 }
 
 .social-icons ul
@@ -297,8 +292,352 @@ blockquote span
 
 /***** index.html *****/
 
-/* Header Syling */
+/* Section one */
+.section-one
+{
+    margin: 40px 0;
+    min-height: 100vh;
+}
 
-/* end of Header Styling */
+.sec-one-left
+{
+    height: 100vh;
+    background: url("Photography Background.png") center/cover no-repeat;
+}
 
+.sec-one-left div
+{
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 30px;
+}
+
+.sec-one-left div h3
+{
+    font-size: 48px;
+    opacity: 0.9;
+    color: rgb(189, 189, 240);
+    font-family: 'Square Peg', cursive;
+}
+
+.sec-one-left div p
+{
+    font-weight: 300;
+    font-size: 1.3rem;
+    opacity: 0.8;
+}
+
+.sec-one-right h3
+{
+    color: gray;
+}
+
+.sec-one-right >h3
+{
+    text-align: center;
+}
+
+.sec-one-right p
+{
+    opacity: 0.9;
+    font-weight: 300;
+}
+
+.work-content
+{
+    margin: 50px 0;
+}
+
+.work-img
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 20px;
+}
+
+.work-img-1
+{
+    height: 400px;
+    Background: url("1.jpg") center/cover no-repeat;
+    transition: 0.5s;
+}
+
+.work-img-2
+{
+    height: 400px;
+    Background: url("2.jpg") center/cover no-repeat;
+    transition: 0.5s;
+}
+
+.work-imgs div:hover
+{
+    box-shadow: 0 0 8px #000;
+    -webkit-box-shadow: 0 0 8px #000;
+    -moz-box-shadow: 0 0 8px #000;
+}
+/* Section two */
+.section-two
+{
+    margin: 40px 0;
+}
+
+.section-two h2
+{
+    text-align: center;
+    font-size: 40px;
+}
+
+.section-two span 
+{
+    color: grey;
+    text-align: center;
+    display: block;
+    font-size: 20;
+    margin-bottom: 30px;
+}
+
+.insta-img
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.insta-img > div
+{
+    position: relative;
+}
+
+.icon-overlay
+{
+    position: absolute;
+    color: #fff;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 50px;
+    background: rgba(255, 165, 0, 0.2);
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.insta-img > div:hover .icon-overlay
+{
+    opacity: 1;
+}
 /***** end of index.html *****/
+
+
+/**** Footer Styling *******/
+.footer
+{
+    background-color: black;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.footer-container h2
+{
+    color: orange;
+    font-size: 36px;
+    font-weight: 500;
+    letter-spacing: 7px;
+}
+
+.subs
+{
+    background: #000;
+    width: 350px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px auto;
+}
+
+.subs i
+{
+    font-size: 26px;
+    flex: 10%;
+    display: block;
+}
+
+.subs input
+{
+    flex: 60%;
+    background: transparent;
+    border: none;
+    font-size: 16px;
+    padding: 0 5px;
+    outline: 0;
+    color: #fff;
+}
+
+.subs button
+{
+    flex: 30%;
+    font-size: 16px;
+    padding: 15px 0;
+    font-weight: bold;
+    background: orange;
+    border: none;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.subs button:hover
+{
+    color: #fff;
+}
+
+.footer > p
+{
+    text-align: center;
+    font-size: 14px;
+}
+/**** End of Footer Styling *******/
+
+/****Media Queries******/
+
+@media screen and (min-width: 678px){
+
+}
+
+@media screen and (min-width: 800px){
+    /* section two */
+    .insta-img{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media screen and (min-width: 992px){
+    /***Header and Footer***/
+    .nav-section{
+        display: flex;
+        justify-content: space-between;
+    }
+    .navBtn{
+        display: none;
+    }
+    .brand-and-navBtn{
+        flex: 0 0 10%;
+        background: none;
+    }
+    .top.nav{
+        flex: 0 1 80%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        transition: transform 0s ease;
+        transform: translateY(0);
+        background: transparent;
+    }
+    .top-nav ul{
+        display: flex;
+    }
+    .top-nav ul li{
+        margin-right: 30px;
+        margin-left: 30px;
+    }
+    .about{
+        margin-top: 0;
+    }
+    .search-icon{
+        flex: 0 0 10%;
+        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+    .search-icon i:hover{
+        transform: scale(1.2);
+    }
+}
+
+@media screen and (min-width: 1000px){
+    /***section one***/
+    .section-one .container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 50px;
+    }
+    .sec-one-left{
+        align-self: center;
+        height: 100%;
+    }
+    .work-content{
+        margin-top: 0;
+    }
+
+    /***footer***/
+    .footer-container{
+        display: grid;
+        grid-template-columns: (2, 1fr);
+        grid-gap: 20px;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    /***footer***/
+    .footer-contaoner > div{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    }
+}
+
+@media screen and (min-width: 1400px){
+    
+}
+
+@media screen and (min-width: 500px){
+    /* overall styling */
+    .header{
+        padding-bottom: 30px;
+    }
+    .social-icons{
+        display: none;
+    }
+    .about-content h3{
+        width: 100%;
+    }
+    .about-content blockquote{
+        font-size: 16px;
+        width:100%;
+    }
+    .subs{
+        width: 280px;
+    }
+    .subs i{
+        display: none;
+    }
+    .subs input{
+        width: 100%;
+    }
+    .subs button{
+        padding: 0 8px;
+    }
+    h2{
+        font-size: 30px!important;
+    }
+    h3{
+        font-size: 20px!important;
+    }
+    p{
+        font-size: 15px;
+    }
+    .btn{
+        font-size: 14px;
+        padding: 8px 0;
+    }
+    .work-imgs{
+        grid-template-columns: 1fr;
+        grid-row-gap: 20px;
+    }
+}
